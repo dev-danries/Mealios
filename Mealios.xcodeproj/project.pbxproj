@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37EF1EDF2A74765A00640370 /* MealiosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1EDE2A74765A00640370 /* MealiosApp.swift */; };
+		37EF1EE12A74765A00640370 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1EE02A74765A00640370 /* ContentView.swift */; };
+		37EF1EE32A74766100640370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37EF1EE22A74766100640370 /* Assets.xcassets */; };
+		37EF1EE62A74766100640370 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37EF1EE52A74766100640370 /* Preview Assets.xcassets */; };
+		37EF1EF02A74766100640370 /* MealiosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1EEF2A74766100640370 /* MealiosTests.swift */; };
+		37EF1EFA2A74766100640370 /* MealiosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1EF92A74766100640370 /* MealiosUITests.swift */; };
+		37EF1EFC2A74766100640370 /* MealiosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1EFB2A74766100640370 /* MealiosUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37EF1EEC2A74766100640370 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37EF1ED32A74765A00640370 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37EF1EDA2A74765A00640370;
+			remoteInfo = Mealios;
+		};
+		37EF1EF62A74766100640370 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37EF1ED32A74765A00640370 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37EF1EDA2A74765A00640370;
+			remoteInfo = Mealios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		37EF1EDB2A74765A00640370 /* Mealios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mealios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37EF1EDE2A74765A00640370 /* MealiosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealiosApp.swift; sourceTree = "<group>"; };
+		37EF1EE02A74765A00640370 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		37EF1EE22A74766100640370 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37EF1EE52A74766100640370 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		37EF1EEB2A74766100640370 /* MealiosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealiosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37EF1EEF2A74766100640370 /* MealiosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealiosTests.swift; sourceTree = "<group>"; };
+		37EF1EF52A74766100640370 /* MealiosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealiosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37EF1EF92A74766100640370 /* MealiosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealiosUITests.swift; sourceTree = "<group>"; };
+		37EF1EFB2A74766100640370 /* MealiosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealiosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37EF1ED82A74765A00640370 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37EF1EE82A74766100640370 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37EF1EF22A74766100640370 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37EF1ED22A74765A00640370 = {
+			isa = PBXGroup;
+			children = (
+				37EF1EDD2A74765A00640370 /* Mealios */,
+				37EF1EEE2A74766100640370 /* MealiosTests */,
+				37EF1EF82A74766100640370 /* MealiosUITests */,
+				37EF1EDC2A74765A00640370 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		37EF1EDC2A74765A00640370 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37EF1EDB2A74765A00640370 /* Mealios.app */,
+				37EF1EEB2A74766100640370 /* MealiosTests.xctest */,
+				37EF1EF52A74766100640370 /* MealiosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37EF1EDD2A74765A00640370 /* Mealios */ = {
+			isa = PBXGroup;
+			children = (
+				37EF1EDE2A74765A00640370 /* MealiosApp.swift */,
+				37EF1EE02A74765A00640370 /* ContentView.swift */,
+				37EF1EE22A74766100640370 /* Assets.xcassets */,
+				37EF1EE42A74766100640370 /* Preview Content */,
+			);
+			path = Mealios;
+			sourceTree = "<group>";
+		};
+		37EF1EE42A74766100640370 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				37EF1EE52A74766100640370 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		37EF1EEE2A74766100640370 /* MealiosTests */ = {
+			isa = PBXGroup;
+			children = (
+				37EF1EEF2A74766100640370 /* MealiosTests.swift */,
+			);
+			path = MealiosTests;
+			sourceTree = "<group>";
+		};
+		37EF1EF82A74766100640370 /* MealiosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				37EF1EF92A74766100640370 /* MealiosUITests.swift */,
+				37EF1EFB2A74766100640370 /* MealiosUITestsLaunchTests.swift */,
+			);
+			path = MealiosUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37EF1EDA2A74765A00640370 /* Mealios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37EF1EFF2A74766100640370 /* Build configuration list for PBXNativeTarget "Mealios" */;
+			buildPhases = (
+				37EF1ED72A74765A00640370 /* Sources */,
+				37EF1ED82A74765A00640370 /* Frameworks */,
+				37EF1ED92A74765A00640370 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mealios;
+			productName = Mealios;
+			productReference = 37EF1EDB2A74765A00640370 /* Mealios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		37EF1EEA2A74766100640370 /* MealiosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37EF1F022A74766100640370 /* Build configuration list for PBXNativeTarget "MealiosTests" */;
+			buildPhases = (
+				37EF1EE72A74766100640370 /* Sources */,
+				37EF1EE82A74766100640370 /* Frameworks */,
+				37EF1EE92A74766100640370 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37EF1EED2A74766100640370 /* PBXTargetDependency */,
+			);
+			name = MealiosTests;
+			productName = MealiosTests;
+			productReference = 37EF1EEB2A74766100640370 /* MealiosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		37EF1EF42A74766100640370 /* MealiosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37EF1F052A74766100640370 /* Build configuration list for PBXNativeTarget "MealiosUITests" */;
+			buildPhases = (
+				37EF1EF12A74766100640370 /* Sources */,
+				37EF1EF22A74766100640370 /* Frameworks */,
+				37EF1EF32A74766100640370 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37EF1EF72A74766100640370 /* PBXTargetDependency */,
+			);
+			name = MealiosUITests;
+			productName = MealiosUITests;
+			productReference = 37EF1EF52A74766100640370 /* MealiosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37EF1ED32A74765A00640370 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					37EF1EDA2A74765A00640370 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					37EF1EEA2A74766100640370 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 37EF1EDA2A74765A00640370;
+					};
+					37EF1EF42A74766100640370 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 37EF1EDA2A74765A00640370;
+					};
+				};
+			};
+			buildConfigurationList = 37EF1ED62A74765A00640370 /* Build configuration list for PBXProject "Mealios" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 37EF1ED22A74765A00640370;
+			productRefGroup = 37EF1EDC2A74765A00640370 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37EF1EDA2A74765A00640370 /* Mealios */,
+				37EF1EEA2A74766100640370 /* MealiosTests */,
+				37EF1EF42A74766100640370 /* MealiosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37EF1ED92A74765A00640370 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37EF1EE62A74766100640370 /* Preview Assets.xcassets in Resources */,
+				37EF1EE32A74766100640370 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37EF1EE92A74766100640370 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37EF1EF32A74766100640370 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37EF1ED72A74765A00640370 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37EF1EE12A74765A00640370 /* ContentView.swift in Sources */,
+				37EF1EDF2A74765A00640370 /* MealiosApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37EF1EE72A74766100640370 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37EF1EF02A74766100640370 /* MealiosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37EF1EF12A74766100640370 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37EF1EFA2A74766100640370 /* MealiosUITests.swift in Sources */,
+				37EF1EFC2A74766100640370 /* MealiosUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37EF1EED2A74766100640370 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37EF1EDA2A74765A00640370 /* Mealios */;
+			targetProxy = 37EF1EEC2A74766100640370 /* PBXContainerItemProxy */;
+		};
+		37EF1EF72A74766100640370 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37EF1EDA2A74765A00640370 /* Mealios */;
+			targetProxy = 37EF1EF62A74766100640370 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		37EF1EFD2A74766100640370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		37EF1EFE2A74766100640370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37EF1F002A74766100640370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mealios/Preview Content\"";
+				DEVELOPMENT_TEAM = VDQ545AEPY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ries.dan.Mealios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		37EF1F012A74766100640370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mealios/Preview Content\"";
+				DEVELOPMENT_TEAM = VDQ545AEPY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ries.dan.Mealios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		37EF1F032A74766100640370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VDQ545AEPY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ries.dan.MealiosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mealios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mealios";
+			};
+			name = Debug;
+		};
+		37EF1F042A74766100640370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VDQ545AEPY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ries.dan.MealiosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mealios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mealios";
+			};
+			name = Release;
+		};
+		37EF1F062A74766100640370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VDQ545AEPY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ries.dan.MealiosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mealios;
+			};
+			name = Debug;
+		};
+		37EF1F072A74766100640370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VDQ545AEPY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ries.dan.MealiosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mealios;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37EF1ED62A74765A00640370 /* Build configuration list for PBXProject "Mealios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37EF1EFD2A74766100640370 /* Debug */,
+				37EF1EFE2A74766100640370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37EF1EFF2A74766100640370 /* Build configuration list for PBXNativeTarget "Mealios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37EF1F002A74766100640370 /* Debug */,
+				37EF1F012A74766100640370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37EF1F022A74766100640370 /* Build configuration list for PBXNativeTarget "MealiosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37EF1F032A74766100640370 /* Debug */,
+				37EF1F042A74766100640370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37EF1F052A74766100640370 /* Build configuration list for PBXNativeTarget "MealiosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37EF1F062A74766100640370 /* Debug */,
+				37EF1F072A74766100640370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37EF1ED32A74765A00640370 /* Project object */;
+}
