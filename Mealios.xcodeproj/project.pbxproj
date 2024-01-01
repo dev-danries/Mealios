@@ -90,6 +90,7 @@
 		377DB8522B427C2D00573A32 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		377DB8542B43615700573A32 /* .swiftformat */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftformat; sourceTree = "<group>"; };
 		377DB8582B437CCA00573A32 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		377DB8592B437E7400573A32 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		37BF50682AA6C1800091A36A /* RecipeTagChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTagChip.swift; sourceTree = "<group>"; };
 		37EF1EDB2A74765A00640370 /* Mealios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mealios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37EF1EDE2A74765A00640370 /* MealiosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealiosApp.swift; sourceTree = "<group>"; };
@@ -181,6 +182,7 @@
 		37EF1ED22A74765A00640370 = {
 			isa = PBXGroup;
 			children = (
+				377DB8592B437E7400573A32 /* README.md */,
 				377DB8582B437CCA00573A32 /* .gitignore */,
 				377DB8542B43615700573A32 /* .swiftformat */,
 				377DB8522B427C2D00573A32 /* .swiftlint.yml */,
