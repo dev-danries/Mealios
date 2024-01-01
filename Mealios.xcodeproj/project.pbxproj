@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D81582D6D4DCE899FCAB7D3 /* Pods_Mealios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3EB7ED9AA311EF14385399 /* Pods_Mealios.framework */; };
+		374700462AAE2B5300C05819 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374700452AAE2B5300C05819 /* SettingsView.swift */; };
+		374700492AAE469F00C05819 /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374700482AAE469F00C05819 /* BundleExtensions.swift */; };
+		374C77242AAD66F900EACBD4 /* IngredientListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C77232AAD66F900EACBD4 /* IngredientListView.swift */; };
+		374C77262AAD716D00EACBD4 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C77252AAD716D00EACBD4 /* IntExtensions.swift */; };
+		374C77282AAD745C00EACBD4 /* InstructionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C77272AAD745C00EACBD4 /* InstructionListView.swift */; };
+		374C772A2AAD7B5800EACBD4 /* NutritionLableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C77292AAD7B5800EACBD4 /* NutritionLableView.swift */; };
+		374C772C2AAD807E00EACBD4 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 374C772B2AAD807E00EACBD4 /* Roboto-Black.ttf */; };
+		374C772E2AAD8EEB00EACBD4 /* CookMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C772D2AAD8EEB00EACBD4 /* CookMode.swift */; };
+		37BF50692AA6C1800091A36A /* RecipeTagChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BF50682AA6C1800091A36A /* RecipeTagChip.swift */; };
 		37EF1EDF2A74765A00640370 /* MealiosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1EDE2A74765A00640370 /* MealiosApp.swift */; };
 		37EF1EE12A74765A00640370 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1EE02A74765A00640370 /* ContentView.swift */; };
 		37EF1EE32A74766100640370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37EF1EE22A74766100640370 /* Assets.xcassets */; };
@@ -14,6 +24,30 @@
 		37EF1EF02A74766100640370 /* MealiosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1EEF2A74766100640370 /* MealiosTests.swift */; };
 		37EF1EFA2A74766100640370 /* MealiosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1EF92A74766100640370 /* MealiosUITests.swift */; };
 		37EF1EFC2A74766100640370 /* MealiosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1EFB2A74766100640370 /* MealiosUITestsLaunchTests.swift */; };
+		37EF1F0F2A74787A00640370 /* MealiosScreenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1F0E2A74787A00640370 /* MealiosScreenshots.swift */; };
+		37EF1F182A7478B400640370 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1F172A7478B400640370 /* SnapshotHelper.swift */; };
+		37EF1F1A2A747F7500640370 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37EF1F192A747F7500640370 /* Launch Screen.storyboard */; };
+		37EF1F1E2A747FA800640370 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37EF1F1C2A747FA800640370 /* Roboto-Regular.ttf */; };
+		37EF1F1F2A747FA800640370 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37EF1F1D2A747FA800640370 /* Roboto-Bold.ttf */; };
+		37EF1F222A7485A800640370 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1F212A7485A800640370 /* AppSettings.swift */; };
+		37EF1F242A74864100640370 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1F232A74864100640370 /* SetupView.swift */; };
+		37EF1F262A74874800640370 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1F252A74874800640370 /* Fonts.swift */; };
+		37EF1F282A748A4400640370 /* CustomInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1F272A748A4400640370 /* CustomInput.swift */; };
+		37EF1F2A2A748EAF00640370 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1F292A748EAF00640370 /* CustomButton.swift */; };
+		37F1F1372A758A9F007B2C39 /* ResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1F1362A758A9F007B2C39 /* ResponseModels.swift */; };
+		37F1F1392A758BB7007B2C39 /* RequestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1F1382A758BB7007B2C39 /* RequestModels.swift */; };
+		37F1F13D2A75B2A3007B2C39 /* ErrorContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1F13C2A75B2A3007B2C39 /* ErrorContainer.swift */; };
+		37FAE1F02A75C73000419C4A /* pizza.json in Resources */ = {isa = PBXBuildFile; fileRef = 37FAE1EF2A75C73000419C4A /* pizza.json */; };
+		37FAE1F22A75C76800419C4A /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FAE1F12A75C76800419C4A /* LottieView.swift */; };
+		37FAE1F42A774A0F00419C4A /* RecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FAE1F32A774A0F00419C4A /* RecipeCard.swift */; };
+		37FAE1F62A77503D00419C4A /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FAE1F52A77503D00419C4A /* Paths.swift */; };
+		37FAE1F82A77576D00419C4A /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FAE1F72A77576D00419C4A /* RemoteImage.swift */; };
+		37FAE1FA2A775CDF00419C4A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FAE1F92A775CDF00419C4A /* HomeView.swift */; };
+		37FAE1FC2A780ECC00419C4A /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FAE1FB2A780ECC00419C4A /* Rating.swift */; };
+		37FAE1FE2A78142300419C4A /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FAE1FD2A78142300419C4A /* RecipeDetailView.swift */; };
+		3E9E58081DD445BC5700DA2D /* Pods_MealiosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A3A19D1F5E36CB49C509FA4 /* Pods_MealiosTests.framework */; };
+		A8C7E922A3E6343FE87E9C09 /* Pods_Mealios_MealiosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9769E81F2E8E46BC2B654E /* Pods_Mealios_MealiosUITests.framework */; };
+		F1641C149E9D56B00988F4A9 /* Pods_Mealios_MealiosScreenshots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59756136C2B897480983C23 /* Pods_Mealios_MealiosScreenshots.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +65,32 @@
 			remoteGlobalIDString = 37EF1EDA2A74765A00640370;
 			remoteInfo = Mealios;
 		};
+		37EF1F122A74787A00640370 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37EF1ED32A74765A00640370 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37EF1EDA2A74765A00640370;
+			remoteInfo = Mealios;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B3EB7ED9AA311EF14385399 /* Pods_Mealios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mealios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E32E81326ACD7D4B96E8FD6 /* Pods-Mealios-MealiosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mealios-MealiosUITests.release.xcconfig"; path = "Target Support Files/Pods-Mealios-MealiosUITests/Pods-Mealios-MealiosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2A3A19D1F5E36CB49C509FA4 /* Pods_MealiosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MealiosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3524FE52BE23B35468320E51 /* Pods-Mealios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mealios.debug.xcconfig"; path = "Target Support Files/Pods-Mealios/Pods-Mealios.debug.xcconfig"; sourceTree = "<group>"; };
+		374700452AAE2B5300C05819 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		374700482AAE469F00C05819 /* BundleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtensions.swift; sourceTree = "<group>"; };
+		374C77232AAD66F900EACBD4 /* IngredientListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientListView.swift; sourceTree = "<group>"; };
+		374C77252AAD716D00EACBD4 /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
+		374C77272AAD745C00EACBD4 /* InstructionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionListView.swift; sourceTree = "<group>"; };
+		374C77292AAD7B5800EACBD4 /* NutritionLableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionLableView.swift; sourceTree = "<group>"; };
+		374C772B2AAD807E00EACBD4 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		374C772D2AAD8EEB00EACBD4 /* CookMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookMode.swift; sourceTree = "<group>"; };
+		377DB8522B427C2D00573A32 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		377DB8542B43615700573A32 /* .swiftformat */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftformat; sourceTree = "<group>"; };
+		377DB8582B437CCA00573A32 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		37BF50682AA6C1800091A36A /* RecipeTagChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTagChip.swift; sourceTree = "<group>"; };
 		37EF1EDB2A74765A00640370 /* Mealios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mealios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37EF1EDE2A74765A00640370 /* MealiosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealiosApp.swift; sourceTree = "<group>"; };
 		37EF1EE02A74765A00640370 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +101,37 @@
 		37EF1EF52A74766100640370 /* MealiosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealiosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37EF1EF92A74766100640370 /* MealiosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealiosUITests.swift; sourceTree = "<group>"; };
 		37EF1EFB2A74766100640370 /* MealiosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealiosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		37EF1F0C2A74787A00640370 /* MealiosScreenshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealiosScreenshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37EF1F0E2A74787A00640370 /* MealiosScreenshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealiosScreenshots.swift; sourceTree = "<group>"; };
+		37EF1F172A7478B400640370 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		37EF1F192A747F7500640370 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		37EF1F1C2A747FA800640370 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		37EF1F1D2A747FA800640370 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		37EF1F202A747FEA00640370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		37EF1F212A7485A800640370 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		37EF1F232A74864100640370 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		37EF1F252A74874800640370 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		37EF1F272A748A4400640370 /* CustomInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInput.swift; sourceTree = "<group>"; };
+		37EF1F292A748EAF00640370 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		37F1F1362A758A9F007B2C39 /* ResponseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModels.swift; sourceTree = "<group>"; };
+		37F1F1382A758BB7007B2C39 /* RequestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModels.swift; sourceTree = "<group>"; };
+		37F1F13C2A75B2A3007B2C39 /* ErrorContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorContainer.swift; sourceTree = "<group>"; };
+		37FAE1EF2A75C73000419C4A /* pizza.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pizza.json; sourceTree = "<group>"; };
+		37FAE1F12A75C76800419C4A /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		37FAE1F32A774A0F00419C4A /* RecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCard.swift; sourceTree = "<group>"; };
+		37FAE1F52A77503D00419C4A /* Paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
+		37FAE1F72A77576D00419C4A /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		37FAE1F92A775CDF00419C4A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		37FAE1FB2A780ECC00419C4A /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		37FAE1FD2A78142300419C4A /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		75EEC3FA234943CC126890B5 /* Pods-Mealios-MealiosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mealios-MealiosUITests.debug.xcconfig"; path = "Target Support Files/Pods-Mealios-MealiosUITests/Pods-Mealios-MealiosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		81B65AE4A05966B0F8A8E29D /* Pods-Mealios-MealiosScreenshots.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mealios-MealiosScreenshots.release.xcconfig"; path = "Target Support Files/Pods-Mealios-MealiosScreenshots/Pods-Mealios-MealiosScreenshots.release.xcconfig"; sourceTree = "<group>"; };
+		8281AEE45E1D81DDAC82FC00 /* Pods-MealiosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MealiosTests.debug.xcconfig"; path = "Target Support Files/Pods-MealiosTests/Pods-MealiosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A16DEFB43FF45B0A31FD6B21 /* Pods-Mealios-MealiosScreenshots.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mealios-MealiosScreenshots.debug.xcconfig"; path = "Target Support Files/Pods-Mealios-MealiosScreenshots/Pods-Mealios-MealiosScreenshots.debug.xcconfig"; sourceTree = "<group>"; };
+		C59756136C2B897480983C23 /* Pods_Mealios_MealiosScreenshots.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mealios_MealiosScreenshots.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9769E81F2E8E46BC2B654E /* Pods_Mealios_MealiosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mealios_MealiosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC947D75E1F28FC28E30428F /* Pods-MealiosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MealiosTests.release.xcconfig"; path = "Target Support Files/Pods-MealiosTests/Pods-MealiosTests.release.xcconfig"; sourceTree = "<group>"; };
+		ECF0A2C4CF7B330046ED9C21 /* Pods-Mealios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mealios.release.xcconfig"; path = "Target Support Files/Pods-Mealios/Pods-Mealios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D81582D6D4DCE899FCAB7D3 /* Pods_Mealios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E9E58081DD445BC5700DA2D /* Pods_MealiosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,19 +155,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8C7E922A3E6343FE87E9C09 /* Pods_Mealios_MealiosUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37EF1F092A74787A00640370 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1641C149E9D56B00988F4A9 /* Pods_Mealios_MealiosScreenshots.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		374700472AAE469100C05819 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				374700482AAE469F00C05819 /* BundleExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		37EF1ED22A74765A00640370 = {
 			isa = PBXGroup;
 			children = (
+				377DB8582B437CCA00573A32 /* .gitignore */,
+				377DB8542B43615700573A32 /* .swiftformat */,
+				377DB8522B427C2D00573A32 /* .swiftlint.yml */,
+				37EF1F1B2A747F9000640370 /* Fonts */,
 				37EF1EDD2A74765A00640370 /* Mealios */,
 				37EF1EEE2A74766100640370 /* MealiosTests */,
 				37EF1EF82A74766100640370 /* MealiosUITests */,
+				37EF1F0D2A74787A00640370 /* MealiosScreenshots */,
 				37EF1EDC2A74765A00640370 /* Products */,
+				72990EA46DA073FDFC9391E5 /* Pods */,
+				A4F49C8F11B9AE345FF862E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +201,7 @@
 				37EF1EDB2A74765A00640370 /* Mealios.app */,
 				37EF1EEB2A74766100640370 /* MealiosTests.xctest */,
 				37EF1EF52A74766100640370 /* MealiosUITests.xctest */,
+				37EF1F0C2A74787A00640370 /* MealiosScreenshots.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,10 +209,22 @@
 		37EF1EDD2A74765A00640370 /* Mealios */ = {
 			isa = PBXGroup;
 			children = (
+				374700472AAE469100C05819 /* Extensions */,
+				37FAE1EE2A75C71900419C4A /* Lottie */,
+				37F1F13A2A7593E9007B2C39 /* UI */,
+				37F1F12E2A7498C3007B2C39 /* API */,
+				37EF1F202A747FEA00640370 /* Info.plist */,
 				37EF1EDE2A74765A00640370 /* MealiosApp.swift */,
 				37EF1EE02A74765A00640370 /* ContentView.swift */,
 				37EF1EE22A74766100640370 /* Assets.xcassets */,
 				37EF1EE42A74766100640370 /* Preview Content */,
+				37EF1F192A747F7500640370 /* Launch Screen.storyboard */,
+				37EF1F212A7485A800640370 /* AppSettings.swift */,
+				37EF1F232A74864100640370 /* SetupView.swift */,
+				37EF1F252A74874800640370 /* Fonts.swift */,
+				37EF1F272A748A4400640370 /* CustomInput.swift */,
+				37EF1F292A748EAF00640370 /* CustomButton.swift */,
+				374C77252AAD716D00EACBD4 /* IntExtensions.swift */,
 			);
 			path = Mealios;
 			sourceTree = "<group>";
@@ -127,6 +254,97 @@
 			path = MealiosUITests;
 			sourceTree = "<group>";
 		};
+		37EF1F0D2A74787A00640370 /* MealiosScreenshots */ = {
+			isa = PBXGroup;
+			children = (
+				37EF1F172A7478B400640370 /* SnapshotHelper.swift */,
+				37EF1F0E2A74787A00640370 /* MealiosScreenshots.swift */,
+			);
+			path = MealiosScreenshots;
+			sourceTree = "<group>";
+		};
+		37EF1F1B2A747F9000640370 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				374C772B2AAD807E00EACBD4 /* Roboto-Black.ttf */,
+				37EF1F1D2A747FA800640370 /* Roboto-Bold.ttf */,
+				37EF1F1C2A747FA800640370 /* Roboto-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		37F1F12E2A7498C3007B2C39 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				37F1F1362A758A9F007B2C39 /* ResponseModels.swift */,
+				37F1F1382A758BB7007B2C39 /* RequestModels.swift */,
+				37FAE1F52A77503D00419C4A /* Paths.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		37F1F13A2A7593E9007B2C39 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				37F1F13B2A7593F3007B2C39 /* Components */,
+				37FAE1F92A775CDF00419C4A /* HomeView.swift */,
+				37FAE1FD2A78142300419C4A /* RecipeDetailView.swift */,
+				374C772D2AAD8EEB00EACBD4 /* CookMode.swift */,
+				374700452AAE2B5300C05819 /* SettingsView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		37F1F13B2A7593F3007B2C39 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				37F1F13C2A75B2A3007B2C39 /* ErrorContainer.swift */,
+				37FAE1F32A774A0F00419C4A /* RecipeCard.swift */,
+				37FAE1F72A77576D00419C4A /* RemoteImage.swift */,
+				37FAE1FB2A780ECC00419C4A /* Rating.swift */,
+				37BF50682AA6C1800091A36A /* RecipeTagChip.swift */,
+				374C77232AAD66F900EACBD4 /* IngredientListView.swift */,
+				374C77272AAD745C00EACBD4 /* InstructionListView.swift */,
+				374C77292AAD7B5800EACBD4 /* NutritionLableView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		37FAE1EE2A75C71900419C4A /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				37FAE1EF2A75C73000419C4A /* pizza.json */,
+				37FAE1F12A75C76800419C4A /* LottieView.swift */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		72990EA46DA073FDFC9391E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3524FE52BE23B35468320E51 /* Pods-Mealios.debug.xcconfig */,
+				ECF0A2C4CF7B330046ED9C21 /* Pods-Mealios.release.xcconfig */,
+				A16DEFB43FF45B0A31FD6B21 /* Pods-Mealios-MealiosScreenshots.debug.xcconfig */,
+				81B65AE4A05966B0F8A8E29D /* Pods-Mealios-MealiosScreenshots.release.xcconfig */,
+				75EEC3FA234943CC126890B5 /* Pods-Mealios-MealiosUITests.debug.xcconfig */,
+				1E32E81326ACD7D4B96E8FD6 /* Pods-Mealios-MealiosUITests.release.xcconfig */,
+				8281AEE45E1D81DDAC82FC00 /* Pods-MealiosTests.debug.xcconfig */,
+				EC947D75E1F28FC28E30428F /* Pods-MealiosTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A4F49C8F11B9AE345FF862E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B3EB7ED9AA311EF14385399 /* Pods_Mealios.framework */,
+				C59756136C2B897480983C23 /* Pods_Mealios_MealiosScreenshots.framework */,
+				CE9769E81F2E8E46BC2B654E /* Pods_Mealios_MealiosUITests.framework */,
+				2A3A19D1F5E36CB49C509FA4 /* Pods_MealiosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,15 +352,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37EF1EFF2A74766100640370 /* Build configuration list for PBXNativeTarget "Mealios" */;
 			buildPhases = (
+				3A0D0BBFB0DD1328B1ED410E /* [CP] Check Pods Manifest.lock */,
 				37EF1ED72A74765A00640370 /* Sources */,
 				37EF1ED82A74765A00640370 /* Frameworks */,
 				37EF1ED92A74765A00640370 /* Resources */,
+				3FE8FA91FE0DAD7F1CBE5399 /* [CP] Embed Pods Frameworks */,
+				377DB8512B427A7800573A32 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Mealios;
+			packageProductDependencies = (
+			);
 			productName = Mealios;
 			productReference = 37EF1EDB2A74765A00640370 /* Mealios.app */;
 			productType = "com.apple.product-type.application";
@@ -151,9 +374,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37EF1F022A74766100640370 /* Build configuration list for PBXNativeTarget "MealiosTests" */;
 			buildPhases = (
+				7FDBC1378585E3C4EEAACE97 /* [CP] Check Pods Manifest.lock */,
 				37EF1EE72A74766100640370 /* Sources */,
 				37EF1EE82A74766100640370 /* Frameworks */,
 				37EF1EE92A74766100640370 /* Resources */,
+				789D0CDF909DA6FEF94ABCF2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,9 +394,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37EF1F052A74766100640370 /* Build configuration list for PBXNativeTarget "MealiosUITests" */;
 			buildPhases = (
+				2B423CE65B3726D8D708DFD2 /* [CP] Check Pods Manifest.lock */,
 				37EF1EF12A74766100640370 /* Sources */,
 				37EF1EF22A74766100640370 /* Frameworks */,
 				37EF1EF32A74766100640370 /* Resources */,
+				EC07B7EC3AE286B70FF5E6F3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,6 +410,26 @@
 			productReference = 37EF1EF52A74766100640370 /* MealiosUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		37EF1F0B2A74787A00640370 /* MealiosScreenshots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37EF1F142A74787A00640370 /* Build configuration list for PBXNativeTarget "MealiosScreenshots" */;
+			buildPhases = (
+				D27062EB77AA897981A4D491 /* [CP] Check Pods Manifest.lock */,
+				37EF1F082A74787A00640370 /* Sources */,
+				37EF1F092A74787A00640370 /* Frameworks */,
+				37EF1F0A2A74787A00640370 /* Resources */,
+				91EB2BA2B60C17078ABBEA85 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37EF1F132A74787A00640370 /* PBXTargetDependency */,
+			);
+			name = MealiosScreenshots;
+			productName = MealiosScreenshots;
+			productReference = 37EF1F0C2A74787A00640370 /* MealiosScreenshots.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -191,7 +438,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					37EF1EDA2A74765A00640370 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -201,6 +448,10 @@
 						TestTargetID = 37EF1EDA2A74765A00640370;
 					};
 					37EF1EF42A74766100640370 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 37EF1EDA2A74765A00640370;
+					};
+					37EF1F0B2A74787A00640370 = {
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = 37EF1EDA2A74765A00640370;
 					};
@@ -215,6 +466,8 @@
 				Base,
 			);
 			mainGroup = 37EF1ED22A74765A00640370;
+			packageReferences = (
+			);
 			productRefGroup = 37EF1EDC2A74765A00640370 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -222,6 +475,7 @@
 				37EF1EDA2A74765A00640370 /* Mealios */,
 				37EF1EEA2A74766100640370 /* MealiosTests */,
 				37EF1EF42A74766100640370 /* MealiosUITests */,
+				37EF1F0B2A74787A00640370 /* MealiosScreenshots */,
 			);
 		};
 /* End PBXProject section */
@@ -231,7 +485,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37EF1F1A2A747F7500640370 /* Launch Screen.storyboard in Resources */,
 				37EF1EE62A74766100640370 /* Preview Assets.xcassets in Resources */,
+				37FAE1F02A75C73000419C4A /* pizza.json in Resources */,
+				37EF1F1F2A747FA800640370 /* Roboto-Bold.ttf in Resources */,
+				374C772C2AAD807E00EACBD4 /* Roboto-Black.ttf in Resources */,
+				37EF1F1E2A747FA800640370 /* Roboto-Regular.ttf in Resources */,
 				37EF1EE32A74766100640370 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,15 +509,221 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		37EF1F0A2A74787A00640370 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B423CE65B3726D8D708DFD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mealios-MealiosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		377DB8512B427A7800573A32 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		3A0D0BBFB0DD1328B1ED410E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mealios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FE8FA91FE0DAD7F1CBE5399 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mealios/Pods-Mealios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mealios/Pods-Mealios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mealios/Pods-Mealios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		789D0CDF909DA6FEF94ABCF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MealiosTests/Pods-MealiosTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MealiosTests/Pods-MealiosTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MealiosTests/Pods-MealiosTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FDBC1378585E3C4EEAACE97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MealiosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91EB2BA2B60C17078ABBEA85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mealios-MealiosScreenshots/Pods-Mealios-MealiosScreenshots-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mealios-MealiosScreenshots/Pods-Mealios-MealiosScreenshots-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mealios-MealiosScreenshots/Pods-Mealios-MealiosScreenshots-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D27062EB77AA897981A4D491 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mealios-MealiosScreenshots-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC07B7EC3AE286B70FF5E6F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mealios-MealiosUITests/Pods-Mealios-MealiosUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mealios-MealiosUITests/Pods-Mealios-MealiosUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mealios-MealiosUITests/Pods-Mealios-MealiosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		37EF1ED72A74765A00640370 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37BF50692AA6C1800091A36A /* RecipeTagChip.swift in Sources */,
 				37EF1EE12A74765A00640370 /* ContentView.swift in Sources */,
+				37EF1F262A74874800640370 /* Fonts.swift in Sources */,
 				37EF1EDF2A74765A00640370 /* MealiosApp.swift in Sources */,
+				37FAE1FA2A775CDF00419C4A /* HomeView.swift in Sources */,
+				374C77262AAD716D00EACBD4 /* IntExtensions.swift in Sources */,
+				37EF1F242A74864100640370 /* SetupView.swift in Sources */,
+				37F1F1392A758BB7007B2C39 /* RequestModels.swift in Sources */,
+				37FAE1F42A774A0F00419C4A /* RecipeCard.swift in Sources */,
+				374700462AAE2B5300C05819 /* SettingsView.swift in Sources */,
+				37F1F1372A758A9F007B2C39 /* ResponseModels.swift in Sources */,
+				37F1F13D2A75B2A3007B2C39 /* ErrorContainer.swift in Sources */,
+				37EF1F2A2A748EAF00640370 /* CustomButton.swift in Sources */,
+				37FAE1F82A77576D00419C4A /* RemoteImage.swift in Sources */,
+				37EF1F222A7485A800640370 /* AppSettings.swift in Sources */,
+				374C77282AAD745C00EACBD4 /* InstructionListView.swift in Sources */,
+				37FAE1FC2A780ECC00419C4A /* Rating.swift in Sources */,
+				37FAE1F22A75C76800419C4A /* LottieView.swift in Sources */,
+				374C77242AAD66F900EACBD4 /* IngredientListView.swift in Sources */,
+				374C772E2AAD8EEB00EACBD4 /* CookMode.swift in Sources */,
+				374C772A2AAD7B5800EACBD4 /* NutritionLableView.swift in Sources */,
+				37FAE1F62A77503D00419C4A /* Paths.swift in Sources */,
+				37EF1F282A748A4400640370 /* CustomInput.swift in Sources */,
+				37FAE1FE2A78142300419C4A /* RecipeDetailView.swift in Sources */,
+				374700492AAE469F00C05819 /* BundleExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +744,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		37EF1F082A74787A00640370 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37EF1F0F2A74787A00640370 /* MealiosScreenshots.swift in Sources */,
+				37EF1F182A7478B400640370 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +766,11 @@
 			target = 37EF1EDA2A74765A00640370 /* Mealios */;
 			targetProxy = 37EF1EF62A74766100640370 /* PBXContainerItemProxy */;
 		};
+		37EF1F132A74787A00640370 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37EF1EDA2A74765A00640370 /* Mealios */;
+			targetProxy = 37EF1F122A74787A00640370 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -299,6 +778,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -331,6 +811,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -346,6 +828,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -359,6 +843,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -391,6 +876,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -400,6 +887,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -411,6 +900,7 @@
 		};
 		37EF1F002A74766100640370 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3524FE52BE23B35468320E51 /* Pods-Mealios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -419,7 +909,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Mealios/Preview Content\"";
 				DEVELOPMENT_TEAM = VDQ545AEPY;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mealios/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -429,7 +921,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ries.dan.Mealios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -440,6 +932,7 @@
 		};
 		37EF1F012A74766100640370 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECF0A2C4CF7B330046ED9C21 /* Pods-Mealios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -448,7 +941,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Mealios/Preview Content\"";
 				DEVELOPMENT_TEAM = VDQ545AEPY;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mealios/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -458,7 +953,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ries.dan.Mealios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -469,6 +964,7 @@
 		};
 		37EF1F032A74766100640370 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8281AEE45E1D81DDAC82FC00 /* Pods-MealiosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -489,6 +985,7 @@
 		};
 		37EF1F042A74766100640370 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC947D75E1F28FC28E30428F /* Pods-MealiosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -509,6 +1006,7 @@
 		};
 		37EF1F062A74766100640370 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75EEC3FA234943CC126890B5 /* Pods-Mealios-MealiosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +1025,7 @@
 		};
 		37EF1F072A74766100640370 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E32E81326ACD7D4B96E8FD6 /* Pods-Mealios-MealiosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +1034,42 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ries.dan.MealiosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mealios;
+			};
+			name = Release;
+		};
+		37EF1F152A74787A00640370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A16DEFB43FF45B0A31FD6B21 /* Pods-Mealios-MealiosScreenshots.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VDQ545AEPY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ries.dan.MealiosScreenshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mealios;
+			};
+			name = Debug;
+		};
+		37EF1F162A74787A00640370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81B65AE4A05966B0F8A8E29D /* Pods-Mealios-MealiosScreenshots.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VDQ545AEPY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ries.dan.MealiosScreenshots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -578,6 +1113,15 @@
 			buildConfigurations = (
 				37EF1F062A74766100640370 /* Debug */,
 				37EF1F072A74766100640370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37EF1F142A74787A00640370 /* Build configuration list for PBXNativeTarget "MealiosScreenshots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37EF1F152A74787A00640370 /* Debug */,
+				37EF1F162A74787A00640370 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

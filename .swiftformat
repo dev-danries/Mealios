@@ -1,0 +1,6 @@
+# format options
+--indent tab
+
+# file options
+--exclude Pods
+

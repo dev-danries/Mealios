@@ -1,0 +1,9 @@
+included:
+  - Mealios
+
+excluded:
+  - Pods
+
+# rule identifiers turned on by default to exclude from running
+disabled_rules:
+  - trailing_comma
