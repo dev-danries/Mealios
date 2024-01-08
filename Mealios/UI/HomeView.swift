@@ -30,11 +30,6 @@ struct HomeView: View {
 	let appSettings = AppSettings.shared
 	@ObservedObject var viewModel = HomeViewModel()
 
-	init(viewModel: HomeViewModel = HomeViewModel()) {
-		self.viewModel = viewModel
-		UINavigationBar.appearance().barTintColor = UIColor(Color("CardColor"))
-	}
-
 	func fetchRecipes() {
 		viewModel.loading = true
 		let authHeader: HTTPHeaders = [.authorization(bearerToken: appSettings.apiToken)]
@@ -44,7 +39,6 @@ struct HomeView: View {
 			.responseDecodable(of: Pageable<Recipe>.self) { response in
 				switch response.result {
 				case let .success(recipeResponse):
-					print(recipeResponse)
 					viewModel.recipes.append(contentsOf: recipeResponse.items)
 					viewModel.searchedRecipes.append(contentsOf: recipeResponse.items)
 					viewModel.page += 1

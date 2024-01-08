@@ -27,8 +27,8 @@ struct IngredientListView: View {
 				Divider()
 					.overlay(Color("CardColor"))
 			}
-			Text(ingredient.display)
-				.font(.custom(Fonts().robotoRegular, size: 15))
+			Text(ingredient.originalText ?? ingredient.display)
+			//                .font(.custom(Fonts().robotoRegular, size: 15).leading(.loose))
 		}
 	}
 }

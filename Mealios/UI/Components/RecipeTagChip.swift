@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WrappingHStack
 
 struct RecipeTagChip: View {
 	var tags: [RecipeTag]
@@ -17,15 +18,19 @@ struct RecipeTagChip: View {
 				.padding(.all, 8)
 				.background(Color("TagChipColor"))
 				.cornerRadius(25)
+				.lineLimit(1)
 		}
 	}
 
 	var body: some View {
-		HStack {
-			ForEach(tags, id: \.id) { tag in
-				chip(text: tag.name)
-			}
+		WrappingHStack(tags, id: \.self, alignment: .leading, lineSpacing: 10) { tag in
+			chip(text: tag.name)
 		}
+//		VStack {
+//			ForEach(tags, id: \.id) { tag in
+//				chip(text: tag.name)
+//			}
+//		}
 	}
 }
 
