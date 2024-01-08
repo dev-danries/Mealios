@@ -16,49 +16,60 @@ struct NutritionLabelView: View {
 				.font(.custom(Fonts().robotoExtraBold, size: 24))
 				.lineLimit(1)
 			Divider()
-			HStack {
-				Text("Calories")
-					.font(.custom(Fonts().robotoExtraBold, size: 18))
-					.bold()
-				Spacer()
-				Text(nutrition.calories!)
-					.font(.custom(Fonts().robotoRegular, size: 18))
+			if nutrition.calories != nil {
+				HStack {
+					Text("Calories")
+						.font(.custom(Fonts().robotoExtraBold, size: 18))
+						.bold()
+					Spacer()
+					Text(nutrition.calories!)
+						.font(.custom(Fonts().robotoRegular, size: 18))
+				}
+
+				Divider()
 			}
-			Divider()
-			HStack {
-				Text("Total Fat")
-					.font(.custom(Fonts().robotoExtraBold, size: 18))
-					.bold()
-				Spacer()
-				Text("\(nutrition.fatContent!) g")
-					.font(.custom(Fonts().robotoRegular, size: 18))
+			if nutrition.fatContent != nil {
+				HStack {
+					Text("Total Fat")
+						.font(.custom(Fonts().robotoExtraBold, size: 18))
+						.bold()
+					Spacer()
+					Text("\(nutrition.fatContent!) g")
+						.font(.custom(Fonts().robotoRegular, size: 18))
+				}
+				Divider()
 			}
-			Divider()
-			HStack {
-				Text("Sodium")
-					.font(.custom(Fonts().robotoExtraBold, size: 18))
-					.bold()
-				Spacer()
-				Text("\(nutrition.sodiumContent!) mg")
-					.font(.custom(Fonts().robotoRegular, size: 18))
+			if nutrition.sodiumContent != nil {
+				HStack {
+					Text("Sodium")
+						.font(.custom(Fonts().robotoExtraBold, size: 18))
+						.bold()
+					Spacer()
+					Text("\(nutrition.sodiumContent!) mg")
+						.font(.custom(Fonts().robotoRegular, size: 18))
+				}
+				Divider()
 			}
-			Divider()
-			HStack {
-				Text("Protein")
-					.font(.custom(Fonts().robotoExtraBold, size: 18))
-					.bold()
-				Spacer()
-				Text("\(nutrition.proteinContent!) g")
-					.font(.custom(Fonts().robotoRegular, size: 18))
+			if nutrition.proteinContent != nil {
+				HStack {
+					Text("Protein")
+						.font(.custom(Fonts().robotoExtraBold, size: 18))
+						.bold()
+					Spacer()
+					Text("\(nutrition.proteinContent!) g")
+						.font(.custom(Fonts().robotoRegular, size: 18))
+				}
+				Divider()
 			}
-			Divider()
-			HStack {
-				Text("Total Carbs")
-					.font(.custom(Fonts().robotoExtraBold, size: 18))
-					.bold()
-				Spacer()
-				Text("\(nutrition.carbohydrateContent!) g")
-					.font(.custom(Fonts().robotoRegular, size: 18))
+			if nutrition.carbohydrateContent != nil {
+				HStack {
+					Text("Total Carbs")
+						.font(.custom(Fonts().robotoExtraBold, size: 18))
+						.bold()
+					Spacer()
+					Text("\(nutrition.carbohydrateContent!) g")
+						.font(.custom(Fonts().robotoRegular, size: 18))
+				}
 			}
 		}
 		.padding(10)

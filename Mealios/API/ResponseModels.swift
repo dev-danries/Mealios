@@ -39,13 +39,13 @@ struct APITokenResponse: Codable {
 struct RecipeIngredient: Codable {
 	var quantity: Double?
 	var unit: IngredientUnit?
-	var food: IngredientFood
+	var food: IngredientFood?
 	var note: String
 	var isFood: Bool
 	var disableAmount: Bool
 	var display: String
 	var title: String?
-	var originalText: String
+	var originalText: String?
 	var referenceId: String
 }
 
