@@ -15,13 +15,12 @@
 import Foundation
 import XCTest
 
-var deviceLanguage = ""
-var locale = ""
-
+@MainActor
 func setupSnapshot(_ app: XCUIApplication, waitForAnimations: Bool = true) {
 	Snapshot.setupSnapshot(app, waitForAnimations: waitForAnimations)
 }
 
+@MainActor
 func snapshot(_ name: String, waitForLoadingIndicator: Bool) {
 	if waitForLoadingIndicator {
 		Snapshot.snapshot(name)
@@ -33,6 +32,7 @@ func snapshot(_ name: String, waitForLoadingIndicator: Bool) {
 /// - Parameters:
 ///   - name: The name of the snapshot
 ///   - timeout: Amount of seconds to wait until the network loading indicator disappears. Pass `0` if you don't want to wait.
+@MainActor
 func snapshot(_ name: String, timeWaitingForIdle timeout: TimeInterval = 20) {
 	Snapshot.snapshot(name, timeWaitingForIdle: timeout)
 }
@@ -52,6 +52,7 @@ enum SnapshotError: Error, CustomDebugStringConvertible {
 }
 
 @objcMembers
+@MainActor
 open class Snapshot: NSObject {
 	static var app: XCUIApplication?
 	static var waitForAnimations = true
@@ -59,6 +60,9 @@ open class Snapshot: NSObject {
 	static var screenshotsDirectory: URL? {
 		return cacheDirectory?.appendingPathComponent("screenshots", isDirectory: true)
 	}
+
+	static var deviceLanguage = ""
+	static var currentLocale = ""
 
 	open class func setupSnapshot(_ app: XCUIApplication, waitForAnimations: Bool = true) {
 		Snapshot.app = app
@@ -76,8 +80,7 @@ open class Snapshot: NSObject {
 	}
 
 	class func setLanguage(_ app: XCUIApplication) {
-		guard let cacheDirectory = cacheDirectory
-		else {
+		guard let cacheDirectory = cacheDirectory else {
 			NSLog("CacheDirectory is not set - probably running on a physical device?")
 			return
 		}
@@ -94,8 +97,7 @@ open class Snapshot: NSObject {
 	}
 
 	class func setLocale(_ app: XCUIApplication) {
-		guard let cacheDirectory = cacheDirectory
-		else {
+		guard let cacheDirectory = cacheDirectory else {
 			NSLog("CacheDirectory is not set - probably running on a physical device?")
 			return
 		}
@@ -104,23 +106,22 @@ open class Snapshot: NSObject {
 
 		do {
 			let trimCharacterSet = CharacterSet.whitespacesAndNewlines
-			locale = try String(contentsOf: path, encoding: .utf8).trimmingCharacters(in: trimCharacterSet)
+			currentLocale = try String(contentsOf: path, encoding: .utf8).trimmingCharacters(in: trimCharacterSet)
 		} catch {
 			NSLog("Couldn't detect/set locale...")
 		}
 
-		if locale.isEmpty && !deviceLanguage.isEmpty {
-			locale = Locale(identifier: deviceLanguage).identifier
+		if currentLocale.isEmpty && !deviceLanguage.isEmpty {
+			currentLocale = Locale(identifier: deviceLanguage).identifier
 		}
 
-		if !locale.isEmpty {
-			app.launchArguments += ["-AppleLocale", "\"\(locale)\""]
+		if !currentLocale.isEmpty {
+			app.launchArguments += ["-AppleLocale", "\"\(currentLocale)\""]
 		}
 	}
 
 	class func setLaunchArguments(_ app: XCUIApplication) {
-		guard let cacheDirectory = cacheDirectory
-		else {
+		guard let cacheDirectory = cacheDirectory else {
 			NSLog("CacheDirectory is not set - probably running on a physical device?")
 			return
 		}
@@ -153,8 +154,7 @@ open class Snapshot: NSObject {
 		}
 
 		#if os(OSX)
-			guard let app = app
-			else {
+			guard let app = app else {
 				NSLog("XCUIApplication is not set. Please call setupSnapshot(app) before snapshot().")
 				return
 			}
@@ -162,8 +162,7 @@ open class Snapshot: NSObject {
 			app.typeKey(XCUIKeyboardKeySecondaryFn, modifierFlags: [])
 		#else
 
-			guard self.app != nil
-			else {
+			guard self.app != nil else {
 				NSLog("XCUIApplication is not set. Please call setupSnapshot(app) before snapshot().")
 				return
 			}
@@ -218,8 +217,7 @@ open class Snapshot: NSObject {
 			return
 		#endif
 
-		guard let app = app
-		else {
+		guard let app = app else {
 			NSLog("XCUIApplication is not set. Please call setupSnapshot(app) before snapshot().")
 			return
 		}
@@ -237,8 +235,7 @@ open class Snapshot: NSObject {
 			let homeDir = URL(fileURLWithPath: NSHomeDirectory())
 			return homeDir.appendingPathComponent(cachePath)
 		#elseif arch(i386) || arch(x86_64) || arch(arm64)
-			guard let simulatorHostHome = ProcessInfo().environment["SIMULATOR_HOST_HOME"]
-			else {
+			guard let simulatorHostHome = ProcessInfo().environment["SIMULATOR_HOST_HOME"] else {
 				throw SnapshotError.cannotFindSimulatorHomeDirectory
 			}
 			let homeDir = URL(fileURLWithPath: simulatorHostHome)
@@ -287,9 +284,9 @@ private extension XCUIElementQuery {
 		return containing(isNetworkLoadingIndicator)
 	}
 
+	@MainActor
 	var deviceStatusBars: XCUIElementQuery {
-		guard let app = Snapshot.app
-		else {
+		guard let app = Snapshot.app else {
 			fatalError("XCUIApplication is not set. Please call setupSnapshot(app) before snapshot().")
 		}
 
@@ -313,4 +310,4 @@ private extension CGFloat {
 
 // Please don't remove the lines below
 // They are used to detect outdated configuration files
-// SnapshotHelperVersion [1.29]
+// SnapshotHelperVersion [1.30]

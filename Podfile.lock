@@ -1,28 +1,40 @@
 PODS:
   - Alamofire (5.7.1)
+  - CocoaAsyncSocket (7.6.5)
   - Foil (4.0.1)
+  - HTTPParserC (2.9.4)
   - lottie-ios (4.2.0)
   - Mocker (2.5.5)
+  - Telegraph (0.30.0):
+    - CocoaAsyncSocket (~> 7.6)
+    - HTTPParserC (~> 2.9)
 
 DEPENDENCIES:
   - Alamofire
   - Foil
   - lottie-ios
   - Mocker
+  - Telegraph
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - CocoaAsyncSocket
     - Foil
+    - HTTPParserC
     - lottie-ios
     - Mocker
+    - Telegraph
 
 SPEC CHECKSUMS:
   Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   Foil: 1d5f2bde862863aed958fbddef7710c92277da9a
+  HTTPParserC: aea14c3d2d4ac5beb3988781daa36dfa62e0d9ef
   lottie-ios: 809ecf2d460ed650a6aed7aa88b2ec45fab4779c
   Mocker: 8c731a8104962f246cadf2b02556218e9edc1390
+  Telegraph: 12576b119324138e4929792af9e5a1085c2ecbc1
 
-PODFILE CHECKSUM: 6cd5e9ef8fec0e4c328903561db28b67448f2af7
+PODFILE CHECKSUM: 8bdf7d5a77485457c2bbabe4586c231bd0e39176
 
 COCOAPODS: 1.11.3

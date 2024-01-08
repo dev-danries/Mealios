@@ -10,7 +10,7 @@ devices([
 #   "iPad Pro (9.7-inch)",
 #   "Apple TV 1080p",
 #   "Apple Watch Series 6 - 44mm",
-    "iPhone 14 Pro"
+    "iPhone 15 Pro"
 ])
 
 languages([

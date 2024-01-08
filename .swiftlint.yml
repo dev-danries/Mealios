@@ -7,3 +7,4 @@ excluded:
 # rule identifiers turned on by default to exclude from running
 disabled_rules:
   - trailing_comma
+  - opening_brace

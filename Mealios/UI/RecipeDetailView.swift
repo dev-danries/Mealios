@@ -16,6 +16,7 @@ struct RecipeDetailView: View {
 	@Environment(\.dismiss) private var dismiss
 	let appSettings = AppSettings.shared
 	var recipeSlug: String
+	var recipeName: String
 	@ObservedObject var recipeViewModel = RecipeDetailViewModel()
 	@State private var cookingModeAlert = false
 	@State private var showCookingMode = false
@@ -63,8 +64,6 @@ struct RecipeDetailView: View {
 
 	func recipeOverview(recipe: RecipeDetails) -> some View {
 		VStack(alignment: .leading) {
-			Text(recipe.name)
-				.font(.custom(Fonts().robotoBold, size: 20))
 			if !recipe.description.isEmpty {
 				Text(recipe.description)
 					.font(.custom(Fonts().robotoRegular, size: 12))
@@ -95,6 +94,8 @@ struct RecipeDetailView: View {
 				Text("\(yield)")
 					.font(.custom(Fonts().robotoBold, size: 18))
 			}
+			Divider()
+				.overlay(Color("CardColor"))
 			ForEach(ingredients, id: \.referenceId) { ingredient in
 				IngredientListView(ingredient: ingredient)
 			}
@@ -109,6 +110,8 @@ struct RecipeDetailView: View {
 				Text("Instructions")
 					.font(.custom(Fonts().robotoBold, size: 18))
 			}
+			Divider()
+				.overlay(Color("CardColor"))
 			ForEach(instructions.indices, id: \.self) { index in
 				InstructionListView(instructionIndex: index + 1, instruction: instructions[index])
 			}
@@ -119,10 +122,26 @@ struct RecipeDetailView: View {
 		VStack(alignment: .leading) {
 			Text("Notes")
 				.font(.custom(Fonts().robotoBold, size: 18))
+			Divider()
+				.overlay(Color("CardColor"))
 			ForEach(notes, id: \.text) { note in
 				Text(note.text)
 					.font(.custom(Fonts().robotoRegular, size: 14))
 			}
+		}
+	}
+
+	func tagList(tags: [RecipeTag]) -> some View {
+		VStack(alignment: .leading) {
+			HStack {
+				Image(systemName: "tag.fill")
+					.renderingMode(.template)
+				Text("Tags")
+					.font(.custom(Fonts().robotoBold, size: 18))
+			}
+			Divider()
+				.overlay(Color("CardColor"))
+			RecipeTagChip(tags: tags)
 		}
 	}
 
@@ -144,8 +163,11 @@ struct RecipeDetailView: View {
 								.padding(.bottom, 20)
 							instructionsList(instructions: recipeViewModel.recipe!.recipeInstructions)
 								.padding(.bottom, 20)
-							if recipeViewModel.recipe!.notes.count > 0 {
+							if !recipeViewModel.recipe!.notes.isEmpty {
 								notesList(notes: recipeViewModel.recipe!.notes)
+							}
+							if !recipeViewModel.recipe!.tags.isEmpty {
+								tagList(tags: recipeViewModel.recipe!.tags)
 							}
 							nutritionList(nutrition: recipeViewModel.recipe!.nutrition, servings: Int(recipeViewModel.recipe!.recipeYield!) ?? 4) // swiftlint:disable:this line_length
 						}
@@ -181,9 +203,6 @@ struct RecipeDetailView: View {
 						}
 					} label: {
 						Image(systemName: "line.3.horizontal")
-						//                        Image("MenuIcon")
-						//                            .renderingMode(.template)
-						//                            .foregroundColor(Color("CardColor"))
 					}
 				}
 			}
@@ -203,11 +222,14 @@ struct RecipeDetailView: View {
 					.padding()
 			}
 		}
+		.navigationTitle(recipeName)
+		.navigationBarTitleDisplayMode(.large)
 	}
 }
 
 struct RecipeDetailViewPreview: PreviewProvider {
 	static var previews: some View {
-		RecipeDetailView(recipeSlug: "macro-friendly-sausage-egg-cheese-breakfast-sandwiches")
+		RecipeDetailView(recipeSlug: "macro-friendly-sausage-egg-cheese-breakfast-sandwiches",
+		                 recipeName: "Macro Friendly Sausage Egg Cheese Breakfast Sandwiches")
 	}
 }

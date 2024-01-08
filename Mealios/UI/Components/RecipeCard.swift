@@ -26,12 +26,7 @@ struct RecipeCard: View {
 				.foregroundColor(.white)
 				.lineLimit(2)
 				.multilineTextAlignment(.leading)
-			if recipe.rating != nil {
-				RatingView(rating: .constant(recipe.rating!))
-			}
-			if !recipe.tags.isEmpty {
-				RecipeTagChip(tags: recipe.tags)
-			}
+				.frame(height: 50)
 		}
 	}
 

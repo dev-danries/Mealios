@@ -17,9 +17,17 @@ class SetupViewModel: ObservableObject {
 	@Published var loading: Bool = false
 	@Published var loadingState: String = "Fetching User Token"
 
-	func validateUrl(urlString: String?) -> Bool {
-		let urlRegEx = "https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)" // swiftlint:disable:this line_length
-		return NSPredicate(format: "SELF MATCHES %@", urlRegEx).evaluate(with: urlString)
+	func validateUrl(_ string: String) -> Bool {
+		let types: NSTextCheckingResult.CheckingType = [.link]
+		let detector = try? NSDataDetector(types: types.rawValue)
+		guard detector != nil && string.count > 0 else { return false }
+		if detector!.numberOfMatches(in: string,
+		                             options: NSRegularExpression.MatchingOptions(rawValue: 0),
+		                             range: NSRange(location: 0, length: string.count)) > 0
+		{
+			return true
+		}
+		return false
 	}
 
 	func validateEmailPassword() -> Bool {
@@ -33,7 +41,7 @@ class SetupViewModel: ObservableObject {
 	func onSubmit() {
 		hasError = false
 		loading = true
-		if !validateUrl(urlString: serverUrl) {
+		if !validateUrl(serverUrl) {
 			hasError = true
 			errMsg = "Please enter a valid url"
 			loading = false
@@ -121,20 +129,24 @@ struct SetupView: View {
 					VStack(spacing: 20) {
 						if viewModel.hasError {
 							ErrorContainer(text: viewModel.errMsg)
+								.accessibilityIdentifier("errorContainer")
 						}
 						TextField("Server Url", text: $viewModel.serverUrl)
 							.textInputAutocapitalization(.never)
 							.keyboardType(.URL)
 							.textContentType(.URL)
 							.modifier(RoundedInputViewModifier(color: Color("LaunchScreenFont")))
+							.accessibilityLabel("serverUrl")
 						TextField("Mealie Email", text: $viewModel.username)
 							.textInputAutocapitalization(.never)
 							.keyboardType(.emailAddress)
 							.textContentType(.emailAddress)
 							.modifier(RoundedInputViewModifier(color: Color("LaunchScreenFont")))
+							.accessibilityIdentifier("mealieEmail")
 						SecureField("Mealie Password", text: $viewModel.password)
 							.textContentType(.password)
 							.modifier(RoundedInputViewModifier(color: Color("LaunchScreenFont")))
+							.accessibilityIdentifier("mealiePassword")
 					}
 					Spacer()
 					Button("Continue", action: { viewModel.onSubmit() })
@@ -143,6 +155,7 @@ struct SetupView: View {
 							bgColor: Color("ButtonColor"),
 							textColor: Color("ButtonTextColor")
 						))
+						.accessibilityIdentifier("continueButton")
 				} else if viewModel.loading {
 					Spacer()
 					VStack {

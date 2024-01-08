@@ -30,6 +30,11 @@ struct HomeView: View {
 	let appSettings = AppSettings.shared
 	@ObservedObject var viewModel = HomeViewModel()
 
+	init(viewModel: HomeViewModel = HomeViewModel()) {
+		self.viewModel = viewModel
+		UINavigationBar.appearance().barTintColor = UIColor(Color("CardColor"))
+	}
+
 	func fetchRecipes() {
 		viewModel.loading = true
 		let authHeader: HTTPHeaders = [.authorization(bearerToken: appSettings.apiToken)]
@@ -75,7 +80,8 @@ struct HomeView: View {
 							LazyVGrid(columns: columns, spacing: 20) {
 								ForEach(viewModel.searchedRecipes.indices, id: \.self) { index in
 									NavigationLink {
-										RecipeDetailView(recipeSlug: viewModel.searchedRecipes[index].slug)
+										RecipeDetailView(recipeSlug: viewModel.searchedRecipes[index].slug,
+										                 recipeName: viewModel.searchedRecipes[index].name)
 									} label: {
 										RecipeCard(recipe: viewModel.searchedRecipes[index])
 											.padding(10)
@@ -91,7 +97,8 @@ struct HomeView: View {
 							LazyVStack {
 								ForEach(viewModel.searchedRecipes.indices, id: \.self) { index in
 									NavigationLink {
-										RecipeDetailView(recipeSlug: viewModel.searchedRecipes[index].slug)
+										RecipeDetailView(recipeSlug: viewModel.searchedRecipes[index].slug,
+										                 recipeName: viewModel.searchedRecipes[index].name)
 									} label: {
 										RecipeCard(recipe: viewModel.searchedRecipes[index])
 											.padding(10)

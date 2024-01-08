@@ -37,7 +37,7 @@ struct APITokenResponse: Codable {
 // MARK: - Recipes
 
 struct RecipeIngredient: Codable {
-	var quantity: Int?
+	var quantity: Double?
 	var unit: IngredientUnit?
 	var food: IngredientFood
 	var note: String

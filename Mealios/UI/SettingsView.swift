@@ -29,7 +29,7 @@ struct SettingsView: View {
 
 	func changeServerUrl() {
 		let authHeader: HTTPHeaders = [.authorization(bearerToken: appSettings.apiToken)]
-		var url = "\(appSettings.serverUrl)\(APIPaths.deleteApiToken)"
+		let url = "\(appSettings.serverUrl)\(APIPaths.deleteApiToken)"
 			.replacingOccurrences(of: "${TOKEN}", with: String(appSettings.apiTokenId))
 		AF.request(url, method: .delete, headers: authHeader)
 			.validate()

@@ -16,14 +16,18 @@
 		374C772A2AAD7B5800EACBD4 /* NutritionLableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C77292AAD7B5800EACBD4 /* NutritionLableView.swift */; };
 		374C772C2AAD807E00EACBD4 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 374C772B2AAD807E00EACBD4 /* Roboto-Black.ttf */; };
 		374C772E2AAD8EEB00EACBD4 /* CookMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C772D2AAD8EEB00EACBD4 /* CookMode.swift */; };
+		377DB85D2B439A7900573A32 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1F212A7485A800640370 /* AppSettings.swift */; };
+		377DB85E2B439A7A00573A32 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1F212A7485A800640370 /* AppSettings.swift */; };
+		377DB8602B439B0300573A32 /* UITestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377DB85F2B439B0300573A32 /* UITestExtensions.swift */; };
+		377DB8612B439B0300573A32 /* UITestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377DB85F2B439B0300573A32 /* UITestExtensions.swift */; };
+		377DB8642B4B718500573A32 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377DB8632B4B718500573A32 /* Extensions.swift */; };
 		37BF50692AA6C1800091A36A /* RecipeTagChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BF50682AA6C1800091A36A /* RecipeTagChip.swift */; };
 		37EF1EDF2A74765A00640370 /* MealiosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1EDE2A74765A00640370 /* MealiosApp.swift */; };
 		37EF1EE12A74765A00640370 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1EE02A74765A00640370 /* ContentView.swift */; };
 		37EF1EE32A74766100640370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37EF1EE22A74766100640370 /* Assets.xcassets */; };
 		37EF1EE62A74766100640370 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37EF1EE52A74766100640370 /* Preview Assets.xcassets */; };
 		37EF1EF02A74766100640370 /* MealiosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1EEF2A74766100640370 /* MealiosTests.swift */; };
-		37EF1EFA2A74766100640370 /* MealiosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1EF92A74766100640370 /* MealiosUITests.swift */; };
-		37EF1EFC2A74766100640370 /* MealiosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1EFB2A74766100640370 /* MealiosUITestsLaunchTests.swift */; };
+		37EF1EFA2A74766100640370 /* SetupViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1EF92A74766100640370 /* SetupViewUITests.swift */; };
 		37EF1F0F2A74787A00640370 /* MealiosScreenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1F0E2A74787A00640370 /* MealiosScreenshots.swift */; };
 		37EF1F182A7478B400640370 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1F172A7478B400640370 /* SnapshotHelper.swift */; };
 		37EF1F1A2A747F7500640370 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37EF1F192A747F7500640370 /* Launch Screen.storyboard */; };
@@ -91,6 +95,9 @@
 		377DB8542B43615700573A32 /* .swiftformat */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftformat; sourceTree = "<group>"; };
 		377DB8582B437CCA00573A32 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		377DB8592B437E7400573A32 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		377DB85F2B439B0300573A32 /* UITestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestExtensions.swift; sourceTree = "<group>"; };
+		377DB8622B43CF8100573A32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		377DB8632B4B718500573A32 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		37BF50682AA6C1800091A36A /* RecipeTagChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTagChip.swift; sourceTree = "<group>"; };
 		37EF1EDB2A74765A00640370 /* Mealios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mealios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37EF1EDE2A74765A00640370 /* MealiosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealiosApp.swift; sourceTree = "<group>"; };
@@ -100,8 +107,7 @@
 		37EF1EEB2A74766100640370 /* MealiosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealiosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37EF1EEF2A74766100640370 /* MealiosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealiosTests.swift; sourceTree = "<group>"; };
 		37EF1EF52A74766100640370 /* MealiosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealiosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		37EF1EF92A74766100640370 /* MealiosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealiosUITests.swift; sourceTree = "<group>"; };
-		37EF1EFB2A74766100640370 /* MealiosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealiosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		37EF1EF92A74766100640370 /* SetupViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewUITests.swift; sourceTree = "<group>"; };
 		37EF1F0C2A74787A00640370 /* MealiosScreenshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealiosScreenshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37EF1F0E2A74787A00640370 /* MealiosScreenshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealiosScreenshots.swift; sourceTree = "<group>"; };
 		37EF1F172A7478B400640370 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
@@ -250,8 +256,9 @@
 		37EF1EF82A74766100640370 /* MealiosUITests */ = {
 			isa = PBXGroup;
 			children = (
-				37EF1EF92A74766100640370 /* MealiosUITests.swift */,
-				37EF1EFB2A74766100640370 /* MealiosUITestsLaunchTests.swift */,
+				377DB8622B43CF8100573A32 /* Info.plist */,
+				37EF1EF92A74766100640370 /* SetupViewUITests.swift */,
+				377DB85F2B439B0300573A32 /* UITestExtensions.swift */,
 			);
 			path = MealiosUITests;
 			sourceTree = "<group>";
@@ -281,6 +288,7 @@
 				37F1F1362A758A9F007B2C39 /* ResponseModels.swift */,
 				37F1F1382A758BB7007B2C39 /* RequestModels.swift */,
 				37FAE1F52A77503D00419C4A /* Paths.swift */,
+				377DB8632B4B718500573A32 /* Extensions.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -722,6 +730,7 @@
 				374C77242AAD66F900EACBD4 /* IngredientListView.swift in Sources */,
 				374C772E2AAD8EEB00EACBD4 /* CookMode.swift in Sources */,
 				374C772A2AAD7B5800EACBD4 /* NutritionLableView.swift in Sources */,
+				377DB8642B4B718500573A32 /* Extensions.swift in Sources */,
 				37FAE1F62A77503D00419C4A /* Paths.swift in Sources */,
 				37EF1F282A748A4400640370 /* CustomInput.swift in Sources */,
 				37FAE1FE2A78142300419C4A /* RecipeDetailView.swift in Sources */,
@@ -733,6 +742,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				377DB85E2B439A7A00573A32 /* AppSettings.swift in Sources */,
 				37EF1EF02A74766100640370 /* MealiosTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -741,8 +751,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37EF1EFA2A74766100640370 /* MealiosUITests.swift in Sources */,
-				37EF1EFC2A74766100640370 /* MealiosUITestsLaunchTests.swift in Sources */,
+				37EF1EFA2A74766100640370 /* SetupViewUITests.swift in Sources */,
+				377DB85D2B439A7900573A32 /* AppSettings.swift in Sources */,
+				377DB8602B439B0300573A32 /* UITestExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -752,6 +763,7 @@
 			files = (
 				37EF1F0F2A74787A00640370 /* MealiosScreenshots.swift in Sources */,
 				37EF1F182A7478B400640370 /* SnapshotHelper.swift in Sources */,
+				377DB8612B439B0300573A32 /* UITestExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -973,6 +985,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VDQ545AEPY;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
@@ -994,6 +1007,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VDQ545AEPY;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
@@ -1014,7 +1028,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VDQ545AEPY;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MealiosUITests/Info.plist;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ries.dan.MealiosUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1033,7 +1049,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VDQ545AEPY;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MealiosUITests/Info.plist;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ries.dan.MealiosUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1051,6 +1069,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VDQ545AEPY;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ries.dan.MealiosScreenshots;
@@ -1069,6 +1088,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VDQ545AEPY;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ries.dan.MealiosScreenshots;

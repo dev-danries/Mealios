@@ -8,41 +8,48 @@
 import XCTest
 
 final class MealiosScreenshots: XCTestCase {
-	override func setUpWithError() throws {
-		// Put setup code here. This method is called before the invocation of each test method in the class.
+	var app: XCUIApplication!
+	let device = XCUIDevice.shared
 
-		// In UI tests it is usually best to stop immediately when a failure occurs.
+	let demoUrl = "https://demo.mealie.io"
+	let demoLoginEmail = "changeme@example.com"
+	let demoLoginPassword = "MyPassword"
+
+	@MainActor override func setUpWithError() throws {
+		app = XCUIApplication()
+		setupSnapshot(app)
+		app.launch()
 		continueAfterFailure = false
-
-		// In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+		device.orientation = .portrait
 	}
 
 	override func tearDownWithError() throws {
-		// Put teardown code here. This method is called after the invocation of each test method in the class.
+		app.terminate()
 	}
 
-	func testScreenshot() throws {
-		let app = XCUIApplication()
-		setupSnapshot(app)
-		app.launch()
-
-		snapshot("0Launch")
+	@MainActor func test_LaunchScreenshot() async throws {
+		snapshot("Launch")
 	}
 
-	//    func testExample() throws {
-	//        // UI tests must launch the application that they test.
-	//        let app = XCUIApplication()
-	//        app.launch()
-//
-	//        // Use XCTAssert and related functions to verify your tests produce the correct results.
-	//    }
-//
-	//    func testLaunchPerformance() throws {
-	//        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-	//            // This measures how long it takes to launch your application.
-	//            measure(metrics: [XCTApplicationLaunchMetric()]) {
-	//                XCUIApplication().launch()
-	//            }
-	//        }
-	//    }
+	@MainActor func test_homepageScreenshot() async throws {
+		let serverUrlTextField = app.textFields.element(matching: XCUIElement.ElementType.textField, identifier: "serverUrl")
+		let emailTextField = app.textFields.element(matching: XCUIElement.ElementType.textField, identifier: "mealieEmail")
+		let passwordTextField = app.secureTextFields.element(matching: XCUIElement.ElementType.secureTextField, identifier: "mealiePassword")
+		let continueButton = app.buttons.element(matching: XCUIElement.ElementType.button, identifier: "continueButton")
+
+		tapAndType(serverUrlTextField, text: demoUrl)
+		tapAndType(emailTextField, text: demoLoginEmail)
+		tapAndType(passwordTextField, text: demoLoginPassword)
+
+		continueButton.tap()
+
+		sleep(20)
+
+		snapshot("Home View")
+	}
+
+	func tapAndType(_ element: XCUIElement, text: String) {
+		element.tap()
+		element.typeText(text)
+	}
 }

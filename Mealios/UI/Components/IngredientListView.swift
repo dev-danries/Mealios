@@ -10,36 +10,25 @@ import SwiftUI
 struct IngredientListView: View {
 	var ingredient: RecipeIngredient
 
+	// Ingredient quantity comes in as a double. Change to int if no fractional details
+	func ingredientQuantityConversion() -> String {
+		guard let quantity = ingredient.quantity else {
+			return ""
+		}
+		let isInteger = (quantity == floor(quantity))
+		return isInteger ? Int(quantity).description : quantity.description
+	}
+
 	var body: some View {
 		VStack(alignment: .leading) {
-			if ingredient.disableAmount {
-				if !(ingredient.title == nil) {
-					Text(ingredient.title!)
-						.font(.custom(Fonts().robotoBold, size: 15))
-					Divider()
-						.overlay(Color("CardColor"))
-				}
-				Text(ingredient.note)
-					.font(.custom(Fonts().robotoRegular, size: 14))
-			} else {
-				if ingredient.title != nil {
-					Text(ingredient.title!)
-						.font(.custom(Fonts().robotoBold, size: 15))
-					Divider()
-				}
-				HStack(spacing: 2.5) {
-					Text(ingredient.quantity?.description ?? "")
-						.font(.custom(Fonts().robotoRegular, size: 15))
-					Text(ingredient.unit?.name ?? "")
-						.font(.custom(Fonts().robotoRegular, size: 15))
-					Text(ingredient.food.name)
-						.font(.custom(Fonts().robotoBold, size: 15))
-					if !ingredient.note.isEmpty {
-						Text("(\(ingredient.note))")
-							.font(.custom(Fonts().robotoRegular, size: 15))
-					}
-				}
+			if !(ingredient.title == nil) {
+				Text(ingredient.title!)
+					.font(.custom(Fonts().robotoBold, size: 15))
+				Divider()
+					.overlay(Color("CardColor"))
 			}
+			Text(ingredient.display)
+				.font(.custom(Fonts().robotoRegular, size: 15))
 		}
 	}
 }
