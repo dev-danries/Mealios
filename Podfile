@@ -9,7 +9,7 @@ target 'Mealios' do
   pod 'Foil'
   pod 'Alamofire'
   pod 'lottie-ios'
-  pod 'AlamofireNetworkActivityLogger', '~> 3.4'
+  pod 'WrappingHStack'
 
   target 'MealiosScreenshots' do
     # Pods for testing
