@@ -83,7 +83,7 @@ struct RecipeDetailView: View {
 		}
 	}
 
-	func ingredientsList(ingredients: [RecipeIngredient], yield: String) -> some View {
+	func ingredientsList(ingredients: [RecipeIngredient], yield: String?) -> some View {
 		VStack(alignment: .leading, spacing: 15) {
 			HStack {
 				Image(systemName: "carrot")
@@ -91,8 +91,10 @@ struct RecipeDetailView: View {
 				Text("Ingredients")
 					.font(.custom(Fonts().robotoBold, size: 18))
 				Spacer()
-				Text("\(yield)")
-					.font(.custom(Fonts().robotoBold, size: 18))
+				if yield != nil {
+					Text("\(yield!)")
+						.font(.custom(Fonts().robotoBold, size: 18))
+				}
 			}
 			Divider()
 				.overlay(Color("CardColor"))
@@ -145,7 +147,7 @@ struct RecipeDetailView: View {
 		}
 	}
 
-	func nutritionList(nutrition: RecipeNutrition, servings _: Int) -> some View {
+	func nutritionList(nutrition: RecipeNutrition) -> some View {
 		NutritionLabelView(nutrition: nutrition)
 	}
 
@@ -159,7 +161,8 @@ struct RecipeDetailView: View {
 						recipeOverview(recipe: recipeViewModel.recipe!)
 							.padding(.bottom, 20)
 						VStack(alignment: .leading, spacing: 20) {
-							ingredientsList(ingredients: recipeViewModel.recipe!.recipeIngredient, yield: recipeViewModel.recipe!.recipeYield!) // swiftlint:disable:this line_length
+							ingredientsList(ingredients: recipeViewModel.recipe!.recipeIngredient,
+							                yield: recipeViewModel.recipe!.recipeYield)
 								.padding(.bottom, 20)
 							instructionsList(instructions: recipeViewModel.recipe!.recipeInstructions)
 								.padding(.bottom, 20)
@@ -169,7 +172,9 @@ struct RecipeDetailView: View {
 							if !recipeViewModel.recipe!.tags.isEmpty {
 								tagList(tags: recipeViewModel.recipe!.tags)
 							}
-							nutritionList(nutrition: recipeViewModel.recipe!.nutrition, servings: Int(recipeViewModel.recipe!.recipeYield!) ?? 4) // swiftlint:disable:this line_length
+							if recipeViewModel.recipe!.settings.showNutrition {
+								nutritionList(nutrition: recipeViewModel.recipe!.nutrition)
+							}
 						}
 						Spacer()
 					}

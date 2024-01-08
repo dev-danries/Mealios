@@ -21,7 +21,7 @@ struct IngredientListView: View {
 
 	var body: some View {
 		VStack(alignment: .leading) {
-			if !(ingredient.title == nil) {
+			if ingredient.title != nil && !ingredient.title!.isEmpty {
 				Text(ingredient.title!)
 					.font(.custom(Fonts().robotoBold, size: 15))
 				Divider()

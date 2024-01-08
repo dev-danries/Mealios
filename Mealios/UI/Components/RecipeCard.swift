@@ -52,7 +52,7 @@ struct RecipeCardPreview: PreviewProvider {
 		let previewUserDefaults: UserDefaults = {
 			let d = UserDefaults(suiteName: "preview_user_defaults")! // swiftlint:disable:this identifier_name
 			d.set("https://api.api-ninjas.com/v1/randomimage?category=", forKey: "mealieServerUrl")
-			d.set("api-key", forKey: "mealieApiToken") // swiftlint:disable:this line_length
+			d.set("api-key", forKey: "mealieApiToken")
 			return d
 		}()
 
