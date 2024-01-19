@@ -12,7 +12,7 @@ class HomeViewModel: ObservableObject {
 	@Published var loading = false
 	@Published var recipes: [Recipe] = []
 	@Published var page = 1
-	@Published var totalPages = 0
+	@Published var totalPages = 1
 	@Published var searchedRecipes: [Recipe] = []
 
 	@Published var searchText: String = "" {
@@ -29,6 +29,10 @@ class HomeViewModel: ObservableObject {
 struct HomeView: View {
 	let appSettings = AppSettings.shared
 	@ObservedObject var viewModel = HomeViewModel()
+
+    init() {
+        fetchRecipes()
+    }
 
 	func fetchRecipes() {
 		viewModel.loading = true
@@ -106,8 +110,6 @@ struct HomeView: View {
 							}
 						}
 					}
-				}.onAppear {
-					fetchRecipes()
 				}
 				.toolbar {
 					ToolbarItem(placement: .navigationBarTrailing) {
@@ -115,7 +117,8 @@ struct HomeView: View {
 							SettingsView()
 						} label: {
 							Image(systemName: "gearshape")
-						}
+                        }
+                        .accessibilityIdentifier("settings-button")
 					}
 				}
 				.accentColor(Color("CardColor"))

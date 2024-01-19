@@ -28,7 +28,6 @@ struct RecipeDetailView: View {
 			.responseDecodable(of: RecipeDetails.self) { response in
 				switch response.result {
 				case let .success(recipeDetails):
-					print(recipeDetails)
 					recipeViewModel.recipe = recipeDetails
 				case let .failure(error):
 					print(error)
@@ -194,12 +193,7 @@ struct RecipeDetailView: View {
 								Text("Cook Mode")
 							}
 						}
-						Button {} label: {
-							HStack {
-								Image(systemName: "square.and.arrow.up")
-								Text("Share")
-							}
-						}
+                        ShareLink(item: URL(string: "\(appSettings.serverUrl)\(APIPaths.getRecipe)/\(recipeSlug)")!, preview: SharePreview(recipeName))
 						Button(role: .destructive) {} label: {
 							HStack {
 								Image(systemName: "minus.circle")
@@ -208,7 +202,8 @@ struct RecipeDetailView: View {
 						}
 					} label: {
 						Image(systemName: "line.3.horizontal")
-					}
+                    }
+                    .accessibilityIdentifier("recipe-detail-menu")
 				}
 			}
 		}

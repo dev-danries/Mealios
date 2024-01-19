@@ -44,6 +44,8 @@ struct RecipeCard: View {
 		.padding(10)
 		.background(Color("CardColor"))
 		.modifier(CardModifier())
+        .accessibilityIdentifier("recipe-card-[\(recipe.slug)]")
+        .accessibilityLabel(Text("Recipe Card for \(recipe.name)"))
 	}
 }
 

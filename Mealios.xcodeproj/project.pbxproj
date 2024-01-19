@@ -21,6 +21,9 @@
 		377DB8602B439B0300573A32 /* UITestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377DB85F2B439B0300573A32 /* UITestExtensions.swift */; };
 		377DB8612B439B0300573A32 /* UITestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377DB85F2B439B0300573A32 /* UITestExtensions.swift */; };
 		377DB8642B4B718500573A32 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377DB8632B4B718500573A32 /* Extensions.swift */; };
+		379601852B4BBB2C00509E2F /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379601842B4BBB2C00509E2F /* TestExtensions.swift */; };
+		379601862B4BBB2C00509E2F /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379601842B4BBB2C00509E2F /* TestExtensions.swift */; };
+		379601872B4BBB2C00509E2F /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379601842B4BBB2C00509E2F /* TestExtensions.swift */; };
 		37BF50692AA6C1800091A36A /* RecipeTagChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BF50682AA6C1800091A36A /* RecipeTagChip.swift */; };
 		37EF1EDF2A74765A00640370 /* MealiosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1EDE2A74765A00640370 /* MealiosApp.swift */; };
 		37EF1EE12A74765A00640370 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF1EE02A74765A00640370 /* ContentView.swift */; };
@@ -98,6 +101,7 @@
 		377DB85F2B439B0300573A32 /* UITestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestExtensions.swift; sourceTree = "<group>"; };
 		377DB8622B43CF8100573A32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		377DB8632B4B718500573A32 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		379601842B4BBB2C00509E2F /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
 		37BF50682AA6C1800091A36A /* RecipeTagChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTagChip.swift; sourceTree = "<group>"; };
 		37EF1EDB2A74765A00640370 /* Mealios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mealios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37EF1EDE2A74765A00640370 /* MealiosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealiosApp.swift; sourceTree = "<group>"; };
@@ -259,6 +263,7 @@
 				377DB8622B43CF8100573A32 /* Info.plist */,
 				37EF1EF92A74766100640370 /* SetupViewUITests.swift */,
 				377DB85F2B439B0300573A32 /* UITestExtensions.swift */,
+				379601842B4BBB2C00509E2F /* TestExtensions.swift */,
 			);
 			path = MealiosUITests;
 			sourceTree = "<group>";
@@ -743,6 +748,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				377DB85E2B439A7A00573A32 /* AppSettings.swift in Sources */,
+				379601852B4BBB2C00509E2F /* TestExtensions.swift in Sources */,
 				37EF1EF02A74766100640370 /* MealiosTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -754,6 +760,7 @@
 				37EF1EFA2A74766100640370 /* SetupViewUITests.swift in Sources */,
 				377DB85D2B439A7900573A32 /* AppSettings.swift in Sources */,
 				377DB8602B439B0300573A32 /* UITestExtensions.swift in Sources */,
+				379601862B4BBB2C00509E2F /* TestExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -764,6 +771,7 @@
 				37EF1F0F2A74787A00640370 /* MealiosScreenshots.swift in Sources */,
 				37EF1F182A7478B400640370 /* SnapshotHelper.swift in Sources */,
 				377DB8612B439B0300573A32 /* UITestExtensions.swift in Sources */,
+				379601872B4BBB2C00509E2F /* TestExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

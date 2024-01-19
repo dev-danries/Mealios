@@ -27,11 +27,9 @@ final class MealiosScreenshots: XCTestCase {
 		app.terminate()
 	}
 
-	@MainActor func test_LaunchScreenshot() async throws {
-		snapshot("Launch")
-	}
-
 	@MainActor func test_homepageScreenshot() async throws {
+        snapshot("Launch")
+        
 		let serverUrlTextField = app.textFields.element(matching: XCUIElement.ElementType.textField, identifier: "serverUrl")
 		let emailTextField = app.textFields.element(matching: XCUIElement.ElementType.textField, identifier: "mealieEmail")
 		let passwordTextField = app.secureTextFields.element(matching: XCUIElement.ElementType.secureTextField, identifier: "mealiePassword")
@@ -43,9 +41,43 @@ final class MealiosScreenshots: XCTestCase {
 
 		continueButton.tap()
 
-		sleep(20)
+		sleep(5)
 
 		snapshot("Home View")
+        
+        let firstRecipe = app.buttons.matching(
+            attribute: \.identifier,
+            is: .contains,
+            value: "recipe-card-[",
+            options: .caseInsensitive)
+            .firstMatch
+        
+        firstRecipe.tap()
+        
+        snapshot("Recipe Detail View - 1")
+        
+        let nutrition = app.staticTexts.matching(attribute: \.label, is: .equalTo, value: "Nutrition Facts").firstMatch
+        
+        nutrition.tap()
+                
+        snapshot("Recipe Detail View - 2")
+                
+        let recipeDetailMenu = app.otherElements.matching(attribute: \.identifier, is: .equalTo, value: "recipe-detail-menu").firstMatch
+        let backButton = app.buttons.matching(attribute: \.label, is: .equalTo, value: "Back", options: .caseInsensitive).firstMatch
+                
+        recipeDetailMenu.tap()
+        snapshot("Recipe Detail Menu View")
+                
+        app.windows.firstMatch.tap()
+        
+        backButton.tap()
+        
+        let settingsButton = app.buttons.matching(attribute: \.identifier, is: .equalTo, value: "settings-button").firstMatch
+        
+        settingsButton.tap()
+        snapshot("Settings View")
+        
+        
 	}
 
 	func tapAndType(_ element: XCUIElement, text: String) {
