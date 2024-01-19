@@ -4,6 +4,7 @@ jobs:
   build-and-test:
     macos:
       xcode: 15.2.0
+    resource_class: macos.m1.medium.gen1
     environment:
       FL_OUTPUT_DIR: output
       FASTLANE_LANE: test
@@ -21,6 +22,7 @@ jobs:
   adhoc:
     macos:
       xcode: 15.2.0
+    resource_class: macos.m1.medium.gen1
     environment:
       FL_OUTPUT_DIR: output
       FASTLANE_LANE: adhoc
